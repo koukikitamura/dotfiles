@@ -1,0 +1,26 @@
+[user]
+	name = kouki kitamura
+	email = developer@koukikitamura.jp
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	df = diff
+	ad = add
+	ph = push
+	lg = log
+	re = rebase
+	cp = cherry-pick
+	cop = !git checkout $(git branch | sed 's/*//g' | sed 's/ //g' | peco)
+[color]
+	ui = true
+[ghq]
+	root = ~/dev/src
+[fetch]
+	prune = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
