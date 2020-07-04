@@ -2,6 +2,7 @@ DOTPATH=~/.dotfiles
 
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:$DOTPATH/cmd
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Aliase
 alias c="clear"
