@@ -1,4 +1,4 @@
-DOTPATH=~/dotfiles
+DOTPATH=~/.dotfiles
 
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:$DOTPATH/cmd
