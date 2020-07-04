@@ -54,6 +54,14 @@ else
   brew cask install docker
 fi
 
+# yarn
+if is_exists "yarn"; then
+  log_info "yarn is already isntalled"
+else
+  log_info "Install yarn"
+  brew install yarn
+fi
+
 ## Programing language
 
 # rbenv
