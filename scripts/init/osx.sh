@@ -46,6 +46,14 @@ else
   curl -sfL https://direnv.net/install.sh | bash
 fi
 
+# docker
+if is_exists "docker"; then
+  log_info "docker is already isntalled"
+else
+  log_info "Install docker"
+  brew cask install docker
+fi
+
 ## Programing language
 
 # rbenv
