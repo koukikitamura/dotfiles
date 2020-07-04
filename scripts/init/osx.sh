@@ -30,6 +30,14 @@ else
   brew install peco
 fi
 
+# ghq
+if is_exists "ghq"; then
+  log_info "ghq is already isntalled"
+else
+  log_info "Install ghq"
+  brew install ghq
+fi
+
 # direnv
 if is_exists "direnv"; then
   log_info "direnv is already isntalled"
