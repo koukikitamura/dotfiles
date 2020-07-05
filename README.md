@@ -16,3 +16,18 @@
 ```
 $ curl https://raw.githubusercontent.com/koukikitamura/dotfiles/master/setup.sh | bash
 ```
+
+
+## update
+
+Install dependencies
+```
+$ cd $DOTPATH
+$ ./scripts/init.sh
+```
+
+Create symbolics
+```
+$ cd $DOTPATH
+$ ./scripts/deploy.sh
+```
