@@ -38,6 +38,15 @@ else
   brew install ghq
 fi
 
+# tig
+if is_exists "tig"; then
+  log_info "tig is already isntalled"
+else
+  log_info "Install tig"
+  brew install tig
+fi
+
+
 # direnv
 if is_exists "direnv"; then
   log_info "direnv is already isntalled"
