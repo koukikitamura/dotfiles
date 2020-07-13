@@ -46,7 +46,6 @@ else
   brew install tig
 fi
 
-
 # direnv
 if is_exists "direnv"; then
   log_info "direnv is already isntalled"
@@ -55,12 +54,36 @@ else
   curl -sfL https://direnv.net/install.sh | bash
 fi
 
-# docker
-if is_exists "docker"; then
-  log_info "docker is already isntalled"
+# aws
+if is_exists "aws"; then
+  log_info "awscli is already isntalled"
 else
-  log_info "Install docker"
-  brew cask install docker
+  log_info "Install awscli"
+  brew install awscli
+fi
+
+if is_exists "git-lfs"; then
+  log_info "git-lfs is already isntalled"
+else
+  log_info "Install git-lfs"
+  brew install git-lfs
+fi
+
+if is_exists "tfenv"; then
+  log_info "tfenv is already isntalled"
+else
+  log_info "Install tfenv"
+  brew install tfenv
+fi
+
+# session manager plugin
+
+# jq
+if is_exists "jq"; then
+  log_info "jq is already isntalled"
+else
+  log_info "Install jq"
+  brew install jq
 fi
 
 # yarn
@@ -95,4 +118,14 @@ if is_exists "jenv"; then
 else
   log_info "Install jEnv"
   brew install jEnv
+fi
+
+## Desktop application
+
+# docker
+if is_exists "docker"; then
+  log_info "docker is already isntalled"
+else
+  log_info "Install docker"
+  brew cask install docker
 fi
