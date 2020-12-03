@@ -1,0 +1,3 @@
+#!/bin/bash
+
+hub browse $(ghq list | peco | cut -d "/" -f 3,3)

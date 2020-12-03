@@ -4,6 +4,10 @@ export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:$DOTPATH/cmd
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+# Load Command
+export PATH=$PATH:$DOTPATH/cmd
+source ${DOTPATH}/cmd/func.sh
+
 # Aliase
 alias c="clear"
 alias ll='ls -lG'
@@ -11,10 +15,6 @@ alias g="git"
 alias d="docker"
 alias m="make"
 alias d-c="docker-compose"
-
-alias cdp='cd $(ls | peco)'
-alias cdgp='cd $(ghq root)/$(ghq list | peco)'
-alias hubgp='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 
 # git completion
 source ${DOTPATH}/lib/git-prompt.sh
