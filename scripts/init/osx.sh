@@ -76,6 +76,20 @@ else
   brew install tfenv
 fi
 
+if is_exists "tflint"; then
+  log_info "tflint is already isntalled"
+else
+  log_info "Install tflint"
+  brew install tflint
+fi
+
+if is_exists "circleci"; then
+  log_info "circleci is already isntalled"
+else
+  log_info "Install circleci"
+  brew install circleci
+fi
+
 # session manager plugin
 
 # jq
